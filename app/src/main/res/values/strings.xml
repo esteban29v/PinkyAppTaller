@@ -1,0 +1,33 @@
+<resources>
+    <!-- Titulos -->
+    <string name="app_name">Pinky App</string>
+    <string name="myname">Juan Velez</string>
+    <string name="register">Regístrate</string>
+    <string name="selfRegister">Registrar</string>
+    <string name="start">Comienza</string>
+    <string name="join">Ingresa</string>
+    <string name="login">Inicia sesión</string>
+
+    <!-- Campos formularios -->
+    <string name="name">Nombres</string>
+    <string name="lastName">Apellidos</string>
+    <string name="email">Correo electrónico</string>
+    <string name="phone">Teléfono</string>
+
+    <!-- Contraseña -->
+    <string name="password">Contraseña</string>
+    <string name="recoverPassword">Recupera tu contraseña</string>
+    <string name="repeatPassword">Repetir contraseña</string>
+    <string name="descRepeatPassword">Ingresa tu correo electrónico para recuperar tu contraseña.</string>
+
+    <!-- Botones -->
+    <string name="joinWithGoogle">Ingresar con Google</string>
+    <string name="terms">Acepto los términos y condiciones</string>
+    <string name="sendRequest">Enviar Solicitud</string>
+
+    <!-- Mensajes genéricos -->
+    <string name="haveAccount">¿No tienes una cuenta?</string>
+    <string name="alreadyHaveAccount">¿Ya tienes una cuenta?</string>
+    <string name="profile">Datos de perfil</string>
+    <string name="updateData">Actualizar datos</string>
+</resources>
