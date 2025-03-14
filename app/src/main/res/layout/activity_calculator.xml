@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="851dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="130dp"
+            android:layout_height="103dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvMensajeInstructivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/adlam_display"
+            android:gravity="center"
+            android:text="@string/calculadora"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <!-- Campos de texto -->
+        <EditText
+            android:id="@+id/etTitulo"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/adlam_display"
+            android:hint="Titulo del libro"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etPaginas"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/adlam_display"
+            android:hint="Numero total de paginas"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etTiempo"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/adlam_display"
+            android:hint="Tiempo disponible diario (Minutos)"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etFecha"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/adlam_display"
+            android:hint="Fecha objetivo de finalizacion"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btRegistrarM"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/adlam_display"
+            android:text="Registrar métrica"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adlam_display"
+            android:text="Resultados"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tituloRs1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Velocidad lectura promedio"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rsVelocidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/darkblue" />
+
+        <TextView
+            android:id="@+id/tituloRs2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Páginas diarias recomendadas"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rsPaginas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/darkblue" />
+
+        <TextView
+            android:id="@+id/tituloRs3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiempo estimado para finalizar"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rsTiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/darkblue" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

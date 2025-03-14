@@ -1,5 +1,6 @@
 package com.example.taller2
 
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
@@ -14,6 +15,7 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var editTextCorreo: EditText
     private lateinit var editTextTelefono: EditText
     private lateinit var buttonActualizar: Button
+    private lateinit var buttonCalculator: Button
 
     private lateinit var sharedPreferences: SharedPreferences
 
@@ -22,11 +24,12 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
 
         // Inicializar vistas
-        editTextNombres = findViewById(R.id.etNombres)
-        editTextApellidos = findViewById(R.id.etApellidos)
+        editTextNombres = findViewById(R.id.etTitulo)
+        editTextApellidos = findViewById(R.id.etPaginas)
         editTextCorreo = findViewById(R.id.etCorreo)
         editTextTelefono = findViewById(R.id.etTelefono)
         buttonActualizar = findViewById(R.id.btActualizar)
+        buttonCalculator = findViewById(R.id.btCalculator)
 
         // Inicializar SharedPreferences
         sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE)
@@ -37,6 +40,12 @@ class ProfileActivity : AppCompatActivity() {
         // Guardar cambios cuando se presione el botón
         buttonActualizar.setOnClickListener {
             guardarDatos()
+        }
+
+        buttonCalculator.setOnClickListener {
+            val intent = Intent(this, CalculatorActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 

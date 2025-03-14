@@ -1,6 +1,6 @@
 <resources>
     <!-- Titulos -->
-    <string name="app_name">Pinky App</string>
+    <string name="app_name">Blue Label</string>
     <string name="myname">Juan Velez</string>
     <string name="register">Regístrate</string>
     <string name="selfRegister">Registrar</string>
@@ -30,4 +30,7 @@
     <string name="alreadyHaveAccount">¿Ya tienes una cuenta?</string>
     <string name="profile">Datos de perfil</string>
     <string name="updateData">Actualizar datos</string>
+    <string name="welcomeText">Inicia una nueva aventura con PinkyApp y descubre una nueva forma de ver el mundo</string>
+    <string name="calcHealth">Calc. Métricas Salud</string>
+    <string name="calculadora">Calculadora de metricas de salud</string>
 </resources>

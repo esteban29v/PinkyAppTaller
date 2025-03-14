@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pink"
+    android:background="@color/lightblue"
     tools:context=".ProfileActivity">
 
     <!-- Imagen de perfil -->
@@ -37,10 +37,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etApellidos" />
+        app:layout_constraintTop_toBottomOf="@id/etPaginas" />
 
     <EditText
-        android:id="@+id/etApellidos"
+        android:id="@+id/etPaginas"
         style="@style/EditTextRounded"
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -51,10 +51,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etNombres" />
+        app:layout_constraintTop_toBottomOf="@id/etTitulo" />
 
     <EditText
-        android:id="@+id/etNombres"
+        android:id="@+id/etTitulo"
         style="@style/EditTextRounded"
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -66,6 +66,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btCalculator"
+        style="@style/EditTextRounded"
+        android:layout_width="306dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_style"
+        android:text="@string/calcHealth"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btActualizar" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btActualizar"
