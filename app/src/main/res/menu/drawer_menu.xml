@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
   <group android:checkableBehavior="single">
-      <item android:id="@+id/inicioFragment"
-          android:title="@string/inicio"/>
+      <item android:id="@+id/misDatosFragment"
+          android:title="@string/mis_datos"/>
 
-      <item android:id="@+id/whiskiesFragment"
-          android:title="Whiskies"/>
+      <item android:id="@+id/analisisFragment"
+          android:title="@string/analisis"/>
 
-      <item android:id="@+id/ronFragment"
-          android:title="Ron"/>
-
-      <item android:id="@+id/vodkaFragment"
-          android:title="Vodka"/>
-
-      <item android:id="@+id/beerFragment"
-          android:title="Cervezas"/>
-
-      <item android:id="@+id/tequilasFragment"
-          android:title="Tequilas"/>
-
-      <item android:id="@+id/categoriasFragment"
-          android:title="@string/categorias"/>
-
-      <item android:id="@+id/perfilFragment"
-          android:title="@string/perfil"/>
-
-      <item android:id="@+id/carritoFragment"
-          android:title="@string/carrito"/>
+      <item android:id="@+id/HistoricoFragment"
+          android:title="@string/historico"/>
 
   </group>
 </menu>

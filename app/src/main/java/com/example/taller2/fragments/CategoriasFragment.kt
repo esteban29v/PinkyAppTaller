@@ -26,30 +26,6 @@ class CategoriasFragment : Fragment() {
         val btnBeer = view.findViewById<Button>(R.id.btnBeer)
         val btnTequila = view.findViewById<Button>(R.id.btnTequila)
 
-        val navController = findNavController()
-        val navOptions = NavOptions.Builder()
-            .setPopUpTo(R.id.categoriasFragment, true) // elimina Categorías de la pila
-            .build()
-
-        view.findViewById<Button>(R.id.btnWhiskies).setOnClickListener {
-            navController.navigate(R.id.whiskiesFragment, null, navOptions)
-        }
-
-        view.findViewById<Button>(R.id.btnRon).setOnClickListener {
-            navController.navigate(R.id.ronFragment, null, navOptions)
-        }
-
-        view.findViewById<Button>(R.id.btnVodka).setOnClickListener {
-            navController.navigate(R.id.vodkaFragment, null, navOptions)
-        }
-
-        view.findViewById<Button>(R.id.btnBeer).setOnClickListener {
-            navController.navigate(R.id.beerFragment, null, navOptions)
-        }
-
-        view.findViewById<Button>(R.id.btnTequila).setOnClickListener {
-            navController.navigate(R.id.tequilasFragment, null, navOptions)
-        }
 
         return view
     }
