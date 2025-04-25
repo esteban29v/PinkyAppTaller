@@ -2,65 +2,23 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/inicioFragment">
+    app:startDestination="@id/misDatosFragment">
 
     <fragment
-        android:id="@+id/inicioFragment"
-        android:name="com.example.taller2.fragments.InicioFragment"
+        android:id="@+id/misDatosFragment"
+        android:name="com.example.taller2.fragments.misDatosFragment"
         app:defaultNavHost="true"
-        android:label="@string/inicio"/>
+        android:label="@string/mis_datos"/>
 
     <fragment
-        android:id="@+id/productosFragment"
-        android:name="com.example.taller2.fragments.ProductosFragment"
-        android:label="@string/productos"
+        android:id="@+id/analisisFragment"
+        android:name="com.example.taller2.fragments.analisisFragment"
+        android:label="@string/analisis"
         app:defaultNavHost="true"/>
 
     <fragment
-        android:id="@+id/whiskiesFragment"
-        android:name="com.example.taller2.fragments.WhiskiesFragment"
-        android:label="Whiskies"
-        app:defaultNavHost="true"/>
-
-    <fragment
-        android:id="@+id/ronFragment"
-        android:name="com.example.taller2.fragments.RonFragment"
-        android:label="Ron"
-        app:defaultNavHost="true"/>
-
-    <fragment
-        android:id="@+id/vodkaFragment"
-        android:name="com.example.taller2.fragments.VodkaFragment"
-        android:label="Tequilas"
-        app:defaultNavHost="true"/>
-
-    <fragment
-        android:id="@+id/beerFragment"
-        android:name="com.example.taller2.fragments.BeerFragment"
-        android:label="Cervezas"
-        app:defaultNavHost="true"/>
-
-    <fragment
-        android:id="@+id/TequilasFragment"
-        android:name="com.example.taller2.fragments.TequilasFragment"
-        android:label="Vodka"
-        app:defaultNavHost="true"/>
-
-    <fragment
-        android:id="@+id/categoriasFragment"
-        android:name="com.example.taller2.fragments.CategoriasFragment"
-        android:label="@string/categorias"
-        app:defaultNavHost="true"/>
-
-    <fragment
-        android:id="@+id/perfilFragment"
-        android:name="com.example.taller2.fragments.PerfilFragment"
-        android:label="@string/perfil"
-        app:defaultNavHost="true"/>
-
-    <fragment
-        android:id="@+id/carritoFragment"
-        android:name="com.example.taller2.fragments.CarritoFragment"
-        android:label="@string/carrito"
+        android:id="@+id/HistoricoFragment"
+        android:name="com.example.taller2.fragments.historicoFragment"
+        android:label="@string/mis_datos"
         app:defaultNavHost="true"/>
 </navigation>

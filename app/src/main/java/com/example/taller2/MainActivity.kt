@@ -1,5 +1,6 @@
 package com.example.taller2;
 
+import android.content.Context
 import android.os.Bundle;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +20,17 @@ class MainActivity: AppCompatActivity() {
     private lateinit var drawerToggle:ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val sharedPref = getSharedPreferences("MisDatos", Context.MODE_PRIVATE)
+        with(sharedPref.edit()) {
+            putString("nombre", "Juan Esteban Velez")
+            putInt("edad", 23)
+            putString("correo", "jevelez@ucompensar.edu.co")
+            putString("programa", "Ingeniería de Software")
+            putInt("semestre", 7)
+            apply()
+        }
+
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main);
 
@@ -47,16 +59,9 @@ class MainActivity: AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.inicioFragment,
-                R.id.productosFragment,
-                R.id.whiskiesFragment,
-                R.id.ronFragment,
-                R.id.vodkaFragment,
-                R.id.beerFragment,
-                R.id.tequilasFragment,
-                R.id.categoriasFragment,
-                R.id.perfilFragment,
-                R.id.carritoFragment
+                R.id.misDatosFragment,
+                R.id.analisisFragment,
+                R.id.HistoricoFragment,
             ),
             drawerLayout
         )

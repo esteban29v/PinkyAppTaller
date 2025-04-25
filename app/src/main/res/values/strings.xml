@@ -1,6 +1,6 @@
 <resources>
     <!-- Titulos -->
-    <string name="app_name">Blue Label</string>
+    <string name="app_name">Parcial Momento 2</string>
     <string name="myname">Juan Velez</string>
     <string name="register">Regístrate</string>
     <string name="selfRegister">Registrar</string>
@@ -63,4 +63,8 @@
     <string name="tequilas">Tequilas</string>
     <string name="txt_tequilas_premium_de_mexico">Tequilas premium de México</string>
     <string name="txt_ron_a_ejo_12_a_os">Ron añejo 12 años</string>
+    <string name="mis_datos">Mis Datos</string>
+    <string name="analisis">Analisis</string>
+    <string name="historico">Histórico</string>
+    <string name="historial_de_lecturas">Historial de Lecturas</string>
 </resources>
